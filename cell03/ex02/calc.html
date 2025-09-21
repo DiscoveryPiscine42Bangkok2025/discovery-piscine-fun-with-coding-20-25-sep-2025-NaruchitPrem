@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's over 9000</title>
+</head>
+<body>
+
+    <form id="calculator-form">
+        <input type="text" id="left-operand">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right-operand">
+        <input type="submit" value="Try me!">
+    </form>
+
+    <script>
+        setInterval(function() {
+            alert('Please, use me...');
+        }, 30000);
+
+        document.getElementById('calculator-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const leftInput = document.getElementById('left-operand').value;
+            const rightInput = document.getElementById('right-operand').value;
+            const operator = document.getElementById('operator').value;
+
+            const leftNum = parseInt(leftInput);
+            const rightNum = parseInt(rightInput);
+
+            if (isNaN(leftNum) || isNaN(rightNum) || leftNum < 0 || rightNum < 0) {
+                alert('Error :(');
+                return;
+            }
+
+            if ((operator === '/' || operator === '%') && rightNum === 0) {
+                const errorMessage = "It's over 9000!";
+                alert(errorMessage);
+                console.log(errorMessage);
+                return;
+            }
+
+            let result;
+            switch (operator) {
+                case '+': result = leftNum + rightNum; break;
+                case '-': result = leftNum - rightNum; break;
+                case '*': result = leftNum * rightNum; break;
+                case '/': result = leftNum / rightNum; break;
+                case '%': result = leftNum % rightNum; break;
+            }
+
+            alert(result);
+            console.log(result);
+        });
+    </script>
+</body>
+</html>
