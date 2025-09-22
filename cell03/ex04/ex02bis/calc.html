@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>It's over 9000 (jQuery)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="calculator-form">
+        <input type="text" id="left-operand">
+        <select id="operator">
+            <option value="+">+</option> <option value="-">-</option>
+            <option value="*">*</option> <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right-operand">
+        <input type="submit" value="Try me!">
+    </form>
+    <script>
+        $(document).ready(function() {
+            setInterval(function() {
+                alert('Please, use me...');
+            }, 30000);
+
+            $('#calculator-form').on('submit', function(event) {
+                event.preventDefault();
+
+                const leftValue = parseInt($('#left-operand').val());
+                const rightValue = parseInt($('#right-operand').val());
+                const operator = $('#operator').val();
+
+                if (isNaN(leftValue) || isNaN(rightValue) || leftValue < 0 || rightValue < 0) {
+                    alert('Error :(');
+                    return;
+                }
+
+                if ((operator === '/' || operator === '%') && rightValue === 0) {
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+                
+                let result;
+                switch (operator) {
+                    case '+': result = leftValue + rightValue; break;
+                    case '-': result = leftValue - rightValue; break;
+                    case '*': result = leftValue * rightValue; break;
+                    case '/': result = leftValue / rightValue; break;
+                    case '%': result = leftValue % rightValue; break;
+                }
+
+                alert(result);
+                console.log(result);
+            });
+        });
+    </script>
+</body>
+</html>

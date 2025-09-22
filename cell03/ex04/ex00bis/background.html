@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background (jQuery)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s ease;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="changeBtn">Click Me!</button>
+
+    <script>
+        function getRandomHexColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        $(document).ready(function() {
+            $('#changeBtn').on('click', function() {
+                const randomColor = getRandomHexColor();
+                $('body').css('background-color', randomColor);
+            });
+        });
+    </script>
+
+</body>
+</html>
