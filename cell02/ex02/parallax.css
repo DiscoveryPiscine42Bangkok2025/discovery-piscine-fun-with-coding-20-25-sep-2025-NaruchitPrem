@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax-section {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1 {
+    background-image: url("https://i.pinimg.com/736x/bd/cb/60/bdcb60b3a6281c75e32e20071248bc8e.jpg");
+}
+
+.image-2 {
+    background-image: url("https://i.pinimg.com/1200x/89/a8/3f/89a83f437d1438f462c2aa0da00dc1fb.jpg");
+}
+
+.content-section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.content-section.dark {
+    background-color: #282e34;
+    color: white;
+}
+
+.caption {
+    text-align: center;
+}
+
+.text-block {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
