@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ชื่อของคุณ - Portfolio</title>
+    <title>Naruchit - Portfolio</title>
 
     <!-- 1. เรียกใช้ Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#showcase">Showcase</a>
+                        <a class="nav-link" href="#project-showcase">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -51,49 +54,150 @@
             <div class="col-md-8">
                 <h2 class="mt-4 mt-md-0">นายนฤชิต เชิงหอม (Naruchit Choenghom)</h2>
                 <p class="lead">
-                    นักศึกษาผู้มีความหลงใหลในการเขียนโค้ดและการสร้างสรรค์เว็บไซต์ที่สวยงามและใช้งานได้จริง
-                    กำลังศึกษาและพัฒนาทักษะทางด้าน Web Development อย่างต่อเนื่อง
+                    Hi, I'm Naruchit, but you can call me Prem, A Cyber Security student at KMITL.
+                     Like to learn about Cyber Security and Network and love to play Chess. Currently grinding the 42 Piscine web modules.
+ 
                 </p>
-                <p>
-                    ในพอร์ตโฟลิโอนี้ คุณจะได้เห็นทักษะและโปรเจกต์บางส่วนที่ผมได้ทำขึ้นมา
-                    หวังว่าคุณจะชอบผลงานของผมนะครับ!
-                </p>
+                <div class="mt-4">
+                    <p class="mb-2 d-flex align-items-center">
+                        <i class="bi bi-mortarboard me-2"></i> King Mongkut's Institute of Technology Ladkrabang — Computer Engineering & Cybersecurity 01
+                    </p>
+                    <p class="mb-2 d-flex align-items-center">
+                        <i class="bi bi-geo-alt me-2"></i> Bangkok, TH
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ======================= Showcase Section ======================= -->
-    <section id="showcase" class="bg-light">
+        <!-- ======================= Project Showcase Section (ส่วนใหม่) ======================= -->
+    <section id="project-showcase">
         <div class="container">
-            <h2 class="text-center mb-4">My Skills & Showcase</h2>
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <!-- ตัวอย่างผลงานที่ 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="port3.0.mp4" title="Project 1 Video" allowfullscreen></iframe>
+                        </div>
+                        <img src="port3.1.JPG" class="card-img-top" alt="Project Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">งานศิลปหัตถกรรม การแข่งขันหุ่นยนต์ระดับสูง</h5>
+                            <p class="card-text">การออกแบบหุ่นยนต์เพื่อแก้ปัญหาตามอุปสรรคที่กําหนด เพื่อพัฒนาความสามารถด้านการเขียนโปรแกรม การปรับใช้และการทํางานร่วมกันเป็นทีม</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ตัวอย่างผลงานที่ 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="port1.0.jpeg" class="card-img-top" alt="Project Placeholder">
+                        <img src="port1.1.jpg" class="card-img-top" alt="Project Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">การประกวศแข่งขัน micro:bit KMITL</h5>
+                            <p class="card-text">ผมได้พัฒนาตู้ฝากของสาธารณะด้วยระบบ NFC เป็นการนํา micro:bit มาประยุกต์ใช้เพื่อสร้างแนวคิดเทคโนโลยีใหม่ ๆ เพื่ออํานวยความสะดวกและเพิ่มความปลอดภัยในการใช้ชีวิตประจําวัน</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ตัวอย่างผลงานที่ 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="port2.0.jpg" class="card-img-top" alt="Project Placeholder">
+                        <img src="port2.1.jpg" class="card-img-top" alt="Project Placeholder">
+                        <div class="card-body">
+                            <h5 class="card-title">การประชุมวิชาการและนำเสนอโครงงาน โครงการห้องเรียนพิเศษ SMTE 2567</h5>
+                            <p class="card-text">ผมได้มีการจัดทำโครงงานเรื่อง “การพัฒนาปลอกคอติดตามตัวสุนัขเพื่อเฝ้าระวังเหตุอันตรายและป้องกันการสูญหายของสุนัขโดยใช้บอร์ด ESP-32 CAMร่วมกับ GPS Module” มีจุดประสงค์เพื่อเพื่อพัฒนาอุปกรณ์ติดตามตำแหน่งของสุนัขเพื่อป้องกันการสูญหายโดยใช้ GPS Module และคำนวณระยะทางที่ใช้ในการกำหนดขอบเขตพื้นที่ของสุนัขและพัฒนาอุปกรณ์บันทึกเหตุการณ์ผ่านมุมมองของสุนัขเพื่อเฝ้าระวังอันตราย ด้วยการใช้ ESP-32 CAM ในการบันทึกเหตุการณ์ในรูปแบบของวิดีโอแบบ Real time โดยเพิ่มฟังก์ชันสำหรับการตรวจจับใบหน้า (FaceDetection) การจดจำใบหน้า (Face Recognition)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= Skills Section ======================= -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center mb-4">My Skills</h2>
+            <!-- แถวที่ 1 -->
             <div class="row text-center">
                 <!-- การ์ดแสดงทักษะที่ 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <i class="bi bi-filetype-html display-4 text-primary"></i>
+                        <div class="card-body d-flex flex-column">
+                            <i class="bi bi-filetype-html display-4" style="color: #fd7e14;"></i>
                             <h5 class="card-title mt-3">HTML5</h5>
-                            <p class="card-text">โครงสร้างเว็บที่แข็งแรงและมีความหมายตามมาตรฐานสากล</p>
+                            <div class="progress my-3" role="progressbar" aria-label="HTML5 Skill" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 58%; background-color: #fd7e14;"></div>
+                            </div>
+                            <p class="card-text mt-auto">Amature - First studied at 42 Bangkok</p>
                         </div>
                     </div>
                 </div>
                 <!-- การ์ดแสดงทักษะที่ 2 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <i class="bi bi-filetype-css display-4 text-primary"></i>
-                            <h5 class="card-title mt-3">CSS3 & Bootstrap</h5>
-                            <p class="card-text">ออกแบบและจัดวางหน้าเว็บให้สวยงามและตอบสนองต่อทุกขนาดหน้าจอ (Responsive)</p>
+                        <div class="card-body d-flex flex-column">
+                            <i class="bi bi-filetype-css display-4" style="color: #e83e8c;"></i>
+                            <h5 class="card-title mt-3">CSS & Bootstrap</h5>
+                            <div class="progress my-3" role="progressbar" aria-label="CSS Skill" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 56%; background-color: #e83e8c;"></div>
+                            </div>
+                            <p class="card-text mt-auto">Amature - First studied at 42 Bangkok</p>
                         </div>
                     </div>
                 </div>
                 <!-- การ์ดแสดงทักษะที่ 3 -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <div class="card-body">
-                            <i class="bi bi-filetype-js display-4 text-primary"></i>
-                            <h5 class="card-title mt-3">JavaScript & jQuery</h5>
-                            <p class="card-text">เพิ่มลูกเล่นและความสามารถในการโต้ตอบกับผู้ใช้บนหน้าเว็บไซต์</p>
+                        <div class="card-body d-flex flex-column">
+                            <i class="bi bi-filetype-py display-4 text-warning"></i>
+                            <h5 class="card-title mt-3">Python</h5>
+                            <div class="progress my-3" role="progressbar" aria-label="Python Skill" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-warning" style="width: 72%"></div>
+                            </div>
+                            <p class="card-text mt-auto">Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- แถวที่ 2 (แถวใหม่) -->
+            <div class="row text-center">
+                <!-- การ์ดแสดงทักษะที่ 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <i class="bi bi-c-square-fill display-4 text-info"></i>
+                            <h5 class="card-title mt-3">C Language</h5>
+                            <div class="progress my-3" role="progressbar" aria-label="C Language Skill" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-info" style="width: 79%"></div>
+                            </div>
+                            <p class="card-text mt-auto">Upper-Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- การ์ดแสดงทักษะที่ 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <i class="bi bi-hdd-network display-4 text-primary"></i>
+                            <h5 class="card-title mt-3">Networking</h5>
+                            <div class="progress my-3" role="progressbar" aria-label="Networking Skill" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar bg-primary" style="width: 71%"></div>
+                            </div>
+                            <p class="card-text mt-auto">Intermediate</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- การ์ดแสดงทักษะที่ 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <i class="bi bi-shield-lock display-4" style="color: #6f42c1;"></i>
+                            <h5 class="card-title mt-3">Cyber Security</h5>
+                            <div class="progress my-3" role="progressbar" aria-label="Cyber Security Skill" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 83%; background-color: #6f42c1;"></div>
+                            </div>
+                            <p class="card-text mt-auto">Upper-Intermediate</p>
                         </div>
                     </div>
                 </div>
@@ -105,18 +209,25 @@
     <section id="contact" class="container">
         <h2 class="text-center mb-4">Contact Me</h2>
         <div class="text-center">
-            <p class="lead">คุณสามารถติดตามหรือติดต่อผมได้ผ่านช่องทางด้านล่างนี้</p>
+            <p class="lead">Follow or contact me through various channels.</p>
+            <p class="lead">GMAIL: naruchitprem@gmail.com</p>
             <div class="contact-icons">
-                <a href="#" class="mx-3"><i class="bi bi-github"></i></a>
-                <a href="#" class="mx-3"><i class="bi bi-linkedin"></i></a>
-                <a href="#" class="mx-3"><i class="bi bi-instagram"></i></a>
+                <!-- Github Icon -->
+                <a href="https://github.com/NaruchitPrem" target="_blank" class="mx-3"><i class="bi bi-github"></i></a>
+                
+                <!-- Facebook Icon (แก้ไขแล้ว) -->
+                <a href="https://www.facebook.com/naruchit.choenghom" target="_blank" class="mx-3"><i class="bi bi-facebook"></i></a>
+                
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/pp_r_e_mm/" target="_blank" class="mx-3"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
     </section>
 
+
     <!-- ======================= Footer ======================= -->
     <footer class="bg-dark text-white text-center p-3">
-        <p class="mb-0">© 2025 [ใส่ชื่อของคุณ]. All Rights Reserved.</p>
+        <p class="mb-0">© 2025 Naruchit Choenghom. All Rights Reserved.</p>
     </footer>
 
 

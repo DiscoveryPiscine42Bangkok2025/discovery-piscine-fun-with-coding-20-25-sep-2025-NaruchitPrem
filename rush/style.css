@@ -1,69 +1,106 @@
 /* ======================================= */
-/*      สไตล์สำหรับหน้า Landing Page       */
+/*         สไตล์สำหรับ Dark Theme          */
 /* ======================================= */
-.landing-page {
-    background-color: #f8f9fa; /* สีพื้นหลังเทาอ่อน */
-}
 
-.portfolio-card {
-    border: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.portfolio-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.portfolio-card .card-img-top {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-/* ทำให้การ์ดทั้งใบเป็นลิงก์ที่ไม่มีขีดเส้นใต้ */
-.portfolio-card-link {
-    text-decoration: none;
-    color: inherit; /* ใช้สีตัวอักษรปกติ */
-}
-
-
-/* ======================================= */
-/*    สไตล์สำหรับหน้า Portfolio (ของเดิม)   */
-/* ======================================= */
+/* --- สไตล์ทั่วไปและหน้า Portfolio --- */
 body {
     padding-top: 56px;
+    background-color: #121212; /* พื้นหลังสีดำเข้ม */
+    color: #e0e0e0; /* ตัวอักษรสีเทาอ่อน */
 }
 
 section {
     padding: 80px 0;
 }
 
-/* --- ส่วน Showcase --- */
-.card {
-    border: none;
+h1, h2, .lead {
+    color: #ffffff; /* หัวข้อและข้อความนำเป็นสีขาว */
 }
+
+/* กำหนดให้ข้อความทั่วไป (p) เป็นสีเทาอ่อน */
+p {
+    color: #adb5bd;
+}
+
+/* --- ส่วน Showcase และการ์ดทั่วไป --- */
+#showcase {
+    background-color: #1c1c1c; /* พื้นหลังส่วน Showcase เข้มขึ้นเล็กน้อย */
+}
+
+.card {
+    border: 1px solid #444;
+    background-color: #2a2a2a; /* พื้นหลังการ์ด */
+    transition: all 0.3s ease-in-out;
+}
+
+/* กำหนดสีข้อความใน Card ทั้งหมด */
+.card .card-title, .card h5 {
+    color: #ffffff; /* หัวข้อในการ์ดเป็นสีขาว */
+}
+.card .card-text {
+    color: #adb5bd; /* เนื้อหาในการ์ดเป็นสีเทาอ่อน */
+}
+
 
 #showcase .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- สไตล์สำหรับ Progress Bar ใน Card --- */
+.card .progress {
+    background-color: #444; /* สีพื้นหลังของหลอด */
+    height: 20px;
+}
+
+.card .progress-bar {
+    /* --- เพิ่มโค้ด 3 บรรทัดนี้เพื่อจัดกลาง --- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ------------------------------------ */
+    color: #ffffff;
+    font-weight: bold;
 }
 
 /* --- ส่วน Contact --- */
 .contact-icons a {
     font-size: 2.5rem;
-    color: #343a40;
+    color: #e0e0e0; /* ไอคอนสีเทาอ่อน */
     transition: color 0.3s;
 }
 
 .contact-icons a:hover {
-    color: #0d6efd;
+    color: #0d6efd; /* สีฟ้าเมื่อเมาส์ชี้ */
 }
-/* --- สไตล์สำหรับปรับขนาดรูปโปรไฟล์ --- */
-.profile-picture {
-    /* กำหนดขนาดความกว้างสูงสุดของรูป */
-    max-width: 250px;
 
-    /* ทำให้ความสูงปรับตามอัตโนมัติเพื่อไม่ให้รูปบิดเบี้ยว */
+/* --- รูปโปรไฟล์ --- */
+.profile-picture {
+    max-width: 250px;
     height: auto;
+    border: 3px solid #444; /* เพิ่มขอบให้รูป */
+}
+
+/* ======================================= */
+/*      สไตล์สำหรับหน้า Landing Page       */
+/* ======================================= */
+.landing-page {
+    background-color: #121212; /* พื้นหลังสีดำเข้ม */
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px); /* แก้ไข: เพิ่มวงเล็บปิด ) */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #444;
+}
+
+/* ทำให้ข้อความในลิงก์การ์ดไม่เปลี่ยนสี */
+.portfolio-card-link {
+    text-decoration: none;
 }
