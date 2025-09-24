@@ -2,11 +2,10 @@
 /*         สไตล์สำหรับ Dark Theme          */
 /* ======================================= */
 
-/* --- สไตล์ทั่วไปและหน้า Portfolio --- */
 body {
     padding-top: 56px;
-    background-color: #121212; /* พื้นหลังสีดำเข้ม */
-    color: #e0e0e0; /* ตัวอักษรสีเทาอ่อน */
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 section {
@@ -14,31 +13,30 @@ section {
 }
 
 h1, h2, .lead {
-    color: #ffffff; /* หัวข้อและข้อความนำเป็นสีขาว */
+    color: #ffffff;
 }
 
-/* กำหนดให้ข้อความทั่วไป (p) เป็นสีเทาอ่อน */
 p {
     color: #adb5bd;
 }
 
 /* --- ส่วน Showcase และการ์ดทั่วไป --- */
 #showcase {
-    background-color: #1c1c1c; /* พื้นหลังส่วน Showcase เข้มขึ้นเล็กน้อย */
+    background-color: #1c1c1c;
 }
 
 .card {
     border: 1px solid #444;
-    background-color: #2a2a2a; /* พื้นหลังการ์ด */
+    background-color: #2a2a2a;
     transition: all 0.3s ease-in-out;
 }
 
 /* กำหนดสีข้อความใน Card ทั้งหมด */
 .card .card-title, .card h5 {
-    color: #ffffff; /* หัวข้อในการ์ดเป็นสีขาว */
+    color: #ffffff;
 }
 .card .card-text {
-    color: #adb5bd; /* เนื้อหาในการ์ดเป็นสีเทาอ่อน */
+    color: #adb5bd;
 }
 
 
@@ -49,16 +47,14 @@ p {
 
 /* --- สไตล์สำหรับ Progress Bar ใน Card --- */
 .card .progress {
-    background-color: #444; /* สีพื้นหลังของหลอด */
+    background-color: #444;
     height: 20px;
 }
 
 .card .progress-bar {
-    /* --- เพิ่มโค้ด 3 บรรทัดนี้เพื่อจัดกลาง --- */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* ------------------------------------ */
     color: #ffffff;
     font-weight: bold;
 }
@@ -66,30 +62,30 @@ p {
 /* --- ส่วน Contact --- */
 .contact-icons a {
     font-size: 2.5rem;
-    color: #e0e0e0; /* ไอคอนสีเทาอ่อน */
+    color: #e0e0e0;
     transition: color 0.3s;
 }
 
 .contact-icons a:hover {
-    color: #0d6efd; /* สีฟ้าเมื่อเมาส์ชี้ */
+    color: #0d6efd;
 }
 
 /* --- รูปโปรไฟล์ --- */
 .profile-picture {
     max-width: 250px;
     height: auto;
-    border: 3px solid #444; /* เพิ่มขอบให้รูป */
+    border: 3px solid #444;
 }
 
 /* ======================================= */
 /*      สไตล์สำหรับหน้า Landing Page       */
 /* ======================================= */
 .landing-page {
-    background-color: #121212; /* พื้นหลังสีดำเข้ม */
+    background-color: #121212;
 }
 
 .portfolio-card:hover {
-    transform: translateY(-10px); /* แก้ไข: เพิ่มวงเล็บปิด ) */
+    transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 

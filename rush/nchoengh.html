@@ -228,19 +228,26 @@
 
     <script>
     $(document).ready(function(){
-        // โค้ดสำหรับทำให้ปุ่ม Hamburger ทำงาน
         $('.navbar-toggler').on('click', function(){
             $('#navbarNav').toggleClass('show');
         });
 
-        // โค้ดสำหรับทำให้การเลื่อนหน้าจอสมูท (Smooth Scrolling)
         $('.nav-link').on('click', function(event) {
             if (this.hash !== "") {
                 event.preventDefault();
+
                 var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800);
+                var target = $(hash);
+
+                if (target.length) {
+                    var navHeight = $('.navbar').outerHeight();
+
+                    var scrollToPosition = target.offset().top - navHeight;
+
+                    $('html, body').stop().animate({
+                        scrollTop: scrollToPosition
+                    }, 800);
+                }
             }
         });
     });
